@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="/css/bootstrap.css" />
+		<link rel="stylesheet" href="/css/daohang.css" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<script type="text/javascript" src="/js/jquery-1.11.3.js" ></script>
+<!--		<script type="text/javascript" src="/js/bootstrap.js" ></script>-->
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+		<script type="text/javascript" src="/js/hp.js" ></script>
+		<title></title>
+	</head>
+	<body>
+	<div id="main">
+		<div class="c">
+<!--			<img class="img" src="/img/child.jpg"/>-->
+			<div class="video">
+				<video autoplay="autoplay" muted="muted" loop="loop">
+					<source type="video/webm" src="/video/video1.webm"></source>
+					<source type="video/mp4" src="/video/video1.mp4"></source>
+				</video>
+			</div>
+			<div class="cover">
+
+				<div class="container cc1">
+					<div class="cover1 col-lg-6 col-md-6 pull-right" >
+						<div class="co1 hide" id="con">
+							<span>中 国 正 能 量<br>2021“五个一百”</span>
+						</div>
+						<div class="co1" id="show"></div>  
+						<div class="co2" >
+							<p>“五个一百”精品申报系统</p>
+							<p>征 集 评 选 展 播 活 动</p>
+						</div>
+						<a class="co3" href="/declare" >开始申报</a>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+	</body>
+
+	<script src="/layuiadmin/layui/layui.js"></script>
+	<script>
+
+		// $(document).ready(function() {
+		// 	console.log("进入页面")
+		//
+		// 	var localTest = layui.sessionData('test');
+		// 	var name = localTest.name;
+		// 	//没有用户信息则返回登录界面
+		// 	if(typeof(name) == "undefined"){
+		// 		window.location.href = "/";
+		// 		return;
+		// 	}
+		// 	console.log("持久存储" + name);
+		//
+		// 	var nameChange = document.getElementById("nameChange");
+		// 	// nameChange.innerHTML = "改变";
+		// 	nameChange.innerHTML = name;
+		//
+		// });
+
+
+		layui.config({
+			base: '../../layuiadmin/' //静态资源所在路径
+		}).extend({
+			index: 'lib/index' //主入口模块
+		}).use(['index', 'user','layer'], function(){
+
+		});
+
+
+	</script>
+</html>
